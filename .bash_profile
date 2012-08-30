@@ -49,7 +49,7 @@ export ARCHFLAGS="-arch x86_64"
 # $C_YELLOW\$(~/.rvm/bin/rvm-prompt)
 
 # assign new colorized prompt
-export PS1="$C_GREEN\$$C_DEFAULT "
+export PS1="$C_GREEN\w \$$C_DEFAULT "
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
