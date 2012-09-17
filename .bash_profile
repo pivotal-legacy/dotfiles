@@ -15,6 +15,8 @@ if [ -f $(brew --prefix)/etc/bash_completion ]; then
   . $(brew --prefix)/etc/bash_completion
 fi
 
+GIT_PS1_SHOWDIRTYSTATE=true
+
 # Add rvm to bash session
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
 
@@ -25,7 +27,7 @@ fi
 # $YELLOW\$(~/.rvm/bin/rvm-prompt)
 
 # assign new colorized prompt
-export PS1="$GREEN\w $DARK_GRAY\$$DEFAULT "
+export PS1="$GREEN\w$(__git_ps1) $DARK_GRAY\$$DEFAULT "
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
