@@ -7,6 +7,19 @@ PURPLE="\[\033[35m\]"
 DARK_GRAY="\[\033[1;30m\]"
 DEFAULT="\[\e[0m\]"
 
+# aliases
+alias ls="ls -a"
+alias ll="ls -lh"
+alias startgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
+alias stopgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+
+# Make ls use colors
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+# tell compiler to always assume 64 bits
+export ARCHFLAGS="-arch x86_64"
+
 # rearrange path for homebrew
 export PATH=/usr/local/bin:$PATH
 
