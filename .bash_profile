@@ -25,7 +25,7 @@ export PATH=/usr/local/bin:$PATH
 
 # setup bash completion for homebrew
 if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  . $(brew --prefix)/etc/bash_completion
+  source $(brew --prefix)/etc/bash_completion
 fi
 
 GIT_PS1_SHOWDIRTYSTATE=true
