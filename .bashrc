@@ -28,8 +28,13 @@ export ARCHFLAGS="-arch x86_64"
 export PATH=/usr/local/bin:$PATH
 
 # setup bash completion for homebrew
-if [ -f $(brew --prefix)/etc/bash_completion ]; then
-  source $(brew --prefix)/etc/bash_completion
+if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
+  . `brew --prefix`/etc/bash_completion.d/git-completion.bash
+fi
+
+# setup git prompt function
+if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
+  . `brew --prefix`/etc/bash_completion.d/git-prompt.sh
 fi
 
 GIT_PS1_SHOWDIRTYSTATE=true
