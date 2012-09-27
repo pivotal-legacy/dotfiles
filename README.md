@@ -10,3 +10,13 @@ ln -s dotfiles/vim ~/.vim
 
 ln -s dotfiles/.bash_profile ~/.bash_profile
 ````
+
+Submodule Setup
+---------------
+
+To initialize the submodules for vim plugins, run the following commands:
+
+```
+git submodule init
+git submodule update
+```
