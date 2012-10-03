@@ -51,6 +51,6 @@ git submodule foreach git pull origin master
 Alternatively, to upgrade only a single plugin, navigate to its top level directory within the ```bundle``` directory and ```pull``` from ```origin```.
 
 ``` bash
-cd ~/dotfiles/vim/some_plugin
+cd ~/dotfiles/vim/bundle/some_plugin
 git pull origin master
 ```
