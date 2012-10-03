@@ -39,3 +39,18 @@ git add .
 git commit -m "Install new_plugin_name as a submodule"
 ```
 
+UPGRADE PLUGINS
+---------------
+
+To upgrade all installed plugins, run the following:
+
+``` bash
+git submodule foreach git pull origin master
+```
+
+Alternatively, to upgrade only a single plugin, navigate to its top level directory within the ```bundle``` directory and ```pull``` from ```origin```.
+
+``` bash
+cd ~/dotfiles/vim/some_plugin
+git pull origin master
+```
