@@ -18,7 +18,7 @@ git clone http://github.com/commandercoriander/dotfiles.git
 # setup symbolic links
 ln -s dotfiles/vim/vimrc ~/.vimrc
 ln -s dotfiles/vim ~/.vim
-ln -s dotfiles/.bash_profile ~/.bash_profile
+ln -s dotfiles/bash_profile ~/.bash_profile
 
 # initialize and pull down submodule plugins for vim
 git submodule init
@@ -36,6 +36,6 @@ Install additional plugins with the following commands:
 cd ~/dotfiles/vim
 git submodule add http://github.com/address_of_new_plugin_goes_here
 git add .
-git commit -m "Install new_plugin_name as a submodile"
+git commit -m "Install new_plugin_name as a submodule"
 ```
 
