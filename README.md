@@ -1,22 +1,41 @@
+INTRODUCTION
+------------
+
+Here are a handful of dotfiles setup to my taste, including my current setup of vim with some useful plugins.
+
 INSTALLATION
 ------------
 
-Here are a handful of dotfiles setup to my taste. Install using symbolic links to make future update a breeze.
+Install with the following commands:
 
-````
+``` bash
+# change to the home directory
+cd
+
+# clone into ~/dotfiles directory
+git clone http://github.com/commandercoriander/dotfiles.git
+
+# setup symbolic links
 ln -s dotfiles/vim/vimrc ~/.vimrc
-
 ln -s dotfiles/vim ~/.vim
-
 ln -s dotfiles/.bash_profile ~/.bash_profile
-````
 
-Submodule Setup
----------------
-
-To initialize the submodules for vim plugins, run the following commands:
-
-```
+# initialize and pull down submodule plugins for vim
 git submodule init
 git submodule update
 ```
+
+GIT SUBMODULES FOR VIM PLUGINS
+------------------------------
+
+The Vim plugins included within this repository are installed using git submodules. For a screencast explaining the setup, see [episode 27](http://vimcasts.org/episodes/synchronizing-plugins-with-git-submodules-and-pathogen/) from [Vimcasts](http://vimcasts.org).
+
+Install additional plugins with the following commands:
+
+``` bash
+cd ~/dotfiles/vim
+git submodule add http://github.com/address_of_new_plugin_goes_here
+git add .
+git commit -m "Install new_plugin_name as a submodile"
+```
+
