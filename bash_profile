@@ -19,7 +19,7 @@ alias activate="source $WORKON_HOME/py-env0/bin/activate && source $WORKON_HOME/
 
 # Make ls use colors
 export CLICOLOR=1
-export LSCOLORS=ExFxCxDxBxegedabagacad
+export LSCOLORS=exfxcxdxbxegedabagacad
 
 # tell compiler to always assume 64 bits
 export ARCHFLAGS="-arch x86_64"
