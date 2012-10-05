@@ -14,6 +14,9 @@ alias startgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/se
 alias stopgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias pbrew="pythonbrew"
 
+# set default editor
+export EDITOR=vim
+
 # Make ls use colors
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
@@ -23,6 +26,9 @@ export ARCHFLAGS="-arch x86_64"
 
 # rearrange path for homebrew
 export PATH=/usr/local/bin:$PATH
+
+# prefix PATH with local node modules directory
+export PATH="./node_modules/.bin:$PATH"
 
 # setup bash completion for homebrew
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
