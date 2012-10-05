@@ -41,10 +41,13 @@ fi
 GIT_PS1_SHOWDIRTYSTATE=true
 
 # Add rvm to bash session
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm"
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # load rvm bash completion
-[[ -r $rvm_path/scripts/completion ]] && . $rvm_path/scripts/completion
+[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
+
+# load pythonbrew to bash session
+[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
 # Add the bit below for ruby version@gemset for prompt
 # $YELLOW\$(~/.rvm/bin/rvm-prompt)
