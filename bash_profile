@@ -15,8 +15,8 @@ alias stopgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias pbrew="pythonbrew"
 
 # Commands for virtualenv
-export WORKON_HOME=~/envs
-alias activate="source $WORKON_HOME/py-env0/bin/activate && source $WORKON_HOME/py-env0/bin/virtualenvwrapper.sh"
+# export WORKON_HOME=~/envs
+# alias activate="source $WORKON_HOME/py-env0/bin/activate && source $WORKON_HOME/py-env0/bin/virtualenvwrapper.sh"
 
 # Make ls use colors
 export CLICOLOR=1
@@ -36,6 +36,11 @@ fi
 # setup git prompt function
 if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
   . `brew --prefix`/etc/bash_completion.d/git-prompt.sh
+fi
+
+# startup virtualenv-burrito
+if [ -f $HOME/.venvburrito/startup.sh ]; then
+    . $HOME/.venvburrito/startup.sh
 fi
 
 # have git prompt note uncommitted changes
@@ -59,3 +64,4 @@ export PS1='\[\033[0;32m\]\w\[\033[0;33m\]$(__git_ps1) \[\033[1;30m\]\$ \[\e[0m\
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
+
