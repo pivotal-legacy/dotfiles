@@ -12,6 +12,7 @@ alias ls="ls -a"
 alias ll="ls -lh"
 alias startgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias stopgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
+alias pbrew="pythonbrew"
 
 # Commands for virtualenv
 export WORKON_HOME=~/envs
