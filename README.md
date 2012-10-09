@@ -1,7 +1,19 @@
 INTRODUCTION
 ------------
 
-Here are a handful of dotfiles setup to my taste, including my current setup of vim with some useful plugins.
+Here are a handful of dotfiles set up to my taste.
+
+The repository here includes my current vim setup. I use [vim-pathogen](https://github.com/tpope/vim-pathogen) to manage vim plugins.
+
+Currently the following vim plugins are installed:
+
+* [Command-T](https://github.com/wincent/Command-T)
+
+* [vim-rails](https://github.com/tpope/vim-rails)
+
+* [vim-ruby-xmpfilter](https://github.com/t9md/vim-ruby-xmpfilter)
+
+  > Vim-ruby-xmpfiler depends on rcodetools. Install with ```gem install rcodetools```.
 
 INSTALLATION
 ------------
