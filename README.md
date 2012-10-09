@@ -33,8 +33,8 @@ The Vim plugins included within this repository are installed using git submodul
 Install additional plugins with the following commands:
 
 ``` bash
-cd ~/dotfiles/vim
-git submodule add http://github.com/address_of_new_plugin_goes_here
+cd ~/dotfiles
+git submodule add http://github.com/address_of_new_plugin_goes_here vim/bundle/new_plugin_name
 git add .
 git commit -m "Install new_plugin_name as a submodule"
 ```
