@@ -82,7 +82,7 @@ GIT_PS1_SHOWDIRTYSTATE=true
 
 # assign new colorized prompt
 # export PS1="$GREEN\w$(__git_ps1) $DARK_GRAY\$$DEFAULT "
-export PS1='\[\033[0;32m\]\w\[\033[0;33m\]$(__git_ps1) \[\033[1;30m\]\$ \[\e[0m\]'
+export PS1='\[\033[0;32m\]\w\[\033[0;33m\]$(__git_ps1) \[\e[0m\]\$ '
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
