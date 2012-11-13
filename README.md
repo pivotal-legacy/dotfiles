@@ -13,10 +13,6 @@ Currently the following vim plugins are installed:
 
 * [snipMate](https://github.com/msanders/snipmate.vim)
 
-* [vim-ruby-xmpfilter](https://github.com/t9md/vim-ruby-xmpfilter)
-
-  > Vim-ruby-xmpfiler depends on rcodetools. Install with ```gem install rcodetools```.
-
 INSTALLATION
 ------------
 
