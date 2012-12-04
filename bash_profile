@@ -75,6 +75,12 @@ GIT_PS1_SHOWDIRTYSTATE=true
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
 #==========================================================================
+# setup path for npm
+#==========================================================================
+
+export PATH=/usr/local/share/npm/bin:$PATH
+
+#==========================================================================
 # prompt
 #==========================================================================
 # Add the bit below for ruby version@gemset in prompt
