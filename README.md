@@ -23,7 +23,7 @@ Install with the following commands:
 cd
 
 # clone into ~/dotfiles directory
-git clone http://github.com/commandercoriander/dotfiles.git
+git clone http://github.com/enocom/dotfiles.git
 
 # setup symbolic links
 ln -s dotfiles/vim/vimrc ~/.vimrc
