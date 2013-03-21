@@ -19,6 +19,8 @@ alias stopgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias pbrew="pythonbrew"
 alias irc="weechat-curses"
 
+alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+
 #==========================================================================
 # basic settings
 #==========================================================================
