@@ -8,10 +8,11 @@ The repository here includes my current vim setup. I use [vim-pathogen](https://
 Currently the following vim plugins are installed:
 
 * [Command-T](https://github.com/wincent/Command-T)
-
-* [vim-rails](https://github.com/tpope/vim-rails)
-
+* [NERD Tree](https://github.com/scrooloose/nerdtree)
 * [snipMate](https://github.com/msanders/snipmate.vim)
+* [vim-rails](https://github.com/tpope/vim-rails)
+* [zencoding-vim](https://github.com/mattn/zencoding-vim)
+
 
 INSTALLATION
 ------------
@@ -24,6 +25,11 @@ cd
 
 # clone into ~/dotfiles directory
 git clone http://github.com/enocom/dotfiles.git
+
+# backup old vimrc, vim folder, and bash profile if necessary
+mv .vimrc .vimrc_old
+mv .vim .vim_old
+mv .bash_profile .bash_profile_old
 
 # setup symbolic links
 ln -s dotfiles/vim/vimrc ~/.vimrc
