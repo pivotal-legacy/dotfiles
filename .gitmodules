@@ -13,3 +13,6 @@
 [submodule "vim/bundle/zencoding"]
 	path = vim/bundle/zencoding
 	url = https://github.com/mattn/zencoding-vim.git
+[submodule "vim/bundle/vundle"]
+	path = vim/bundle/vundle
+	url = https://github.com/gmarik/vundle.git
