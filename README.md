@@ -12,6 +12,7 @@ Currently the following vim plugins are installed:
 * [snipMate](https://github.com/msanders/snipmate.vim)
 * [vim-rails](https://github.com/tpope/vim-rails)
 * [Sparkup](https://github.com/rstacruz/sparkup)
+* [JSHint.vim](https://github.com/wookiehangover/jshint.vim)
 
 
 INSTALLATION
