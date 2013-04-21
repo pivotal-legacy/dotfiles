@@ -11,7 +11,7 @@ Currently the following vim plugins are installed:
 * [NERD Tree](https://github.com/scrooloose/nerdtree)
 * [snipMate](https://github.com/msanders/snipmate.vim)
 * [vim-rails](https://github.com/tpope/vim-rails)
-* [Sparkup](https://github.com/rstacruz/sparkup)
+* [Zencoding-vim](https://github.com/mattn/zencoding-vim/)
 * [Syntastic](https://github.com/scrooloose/syntastic)
 
 
