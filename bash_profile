@@ -77,10 +77,11 @@ GIT_PS1_SHOWDIRTYSTATE=true
 [[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
 
 #==========================================================================
-# setup path for npm
+# setup path for npm ande node
 #==========================================================================
 
 export PATH=/usr/local/share/npm/bin:$PATH
+export NODE_PATH="/usr/local/lib/node_modules"
 
 #==========================================================================
 # prompt
