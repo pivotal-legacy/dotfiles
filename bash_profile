@@ -16,7 +16,6 @@ alias ls="ls -A"
 alias ll="ls -lh"
 alias startgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias stopgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
-alias pbrew="pythonbrew"
 alias irc="weechat-curses"
 
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
@@ -70,18 +69,11 @@ GIT_PS1_SHOWDIRTYSTATE=true
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
 #==========================================================================
-# python brew
-#==========================================================================
-
-# load pythonbrew to bash session
-[[ -s $HOME/.pythonbrew/etc/bashrc ]] && source $HOME/.pythonbrew/etc/bashrc
-
-#==========================================================================
-# setup path for npm ande node
+# setup path for npm and node
 #==========================================================================
 
 export PATH=/usr/local/share/npm/bin:$PATH
-export NODE_PATH="/usr/local/lib/node_modules"
+export NODE_PATH=/usr/local/lib/node_modules
 
 #==========================================================================
 # prompt
