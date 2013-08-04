@@ -59,6 +59,13 @@ fi
 GIT_PS1_SHOWDIRTYSTATE=true
 
 #==========================================================================
+# setup path for npm and node
+#==========================================================================
+
+export PATH=/usr/local/share/npm/bin:$PATH
+export NODE_PATH=/usr/local/lib/node_modules
+
+#==========================================================================
 # RVM
 #==========================================================================
 
@@ -67,13 +74,6 @@ GIT_PS1_SHOWDIRTYSTATE=true
 
 # load rvm bash completion
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
-
-#==========================================================================
-# setup path for npm and node
-#==========================================================================
-
-export PATH=/usr/local/share/npm/bin:$PATH
-export NODE_PATH=/usr/local/lib/node_modules
 
 #==========================================================================
 # prompt
