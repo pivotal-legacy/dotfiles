@@ -17,6 +17,9 @@ alias ll="ls -lh"
 alias startgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
 alias stopgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias irc="weechat-curses"
+alias v="vim"
+alias rgl="rvm gemset list"
+alias rgu="rvm gemset use"
 
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
