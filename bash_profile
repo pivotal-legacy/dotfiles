@@ -78,6 +78,8 @@ export NODE_PATH=/usr/local/lib/node_modules
 # load rvm bash completion
 [[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
 
+export ANDROID_HOME='/usr/local/Cellar/android-sdk/22.2.1'
+
 #==========================================================================
 # prompt
 #==========================================================================
