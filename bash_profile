@@ -14,8 +14,6 @@ DEFAULT="\[\e[0m\]"
 #==========================================================================
 alias ls="ls -A"
 alias ll="ls -lh"
-alias startgres="pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start"
-alias stopgres="pg_ctl -D /usr/local/var/postgres stop -s -m fast"
 alias irc="weechat-curses"
 alias v="vim"
 alias rgl="rvm gemset list"
