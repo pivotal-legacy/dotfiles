@@ -18,8 +18,8 @@ alias irc="weechat-curses"
 alias v="vim"
 alias rgl="rvm gemset list"
 alias rgu="rvm gemset use"
-
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
+alias startgres="postgres -D /usr/local/var/postgres"
 
 #==========================================================================
 # basic settings
