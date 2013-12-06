@@ -85,7 +85,7 @@ export ANDROID_HOME='/usr/local/Cellar/android-sdk/22.2.1'
 
 # assign new colorized prompt
 # export PS1="$GREEN\w$(__git_ps1) $DARK_GRAY\$$DEFAULT "
-export PS1='\[\033[0;34m\]\W\[\033[35m\]$(__git_ps1) \[\e[0m\]\$ '
+export PS1='\[\033[0;34m\]\u: \W\[\033[35m\]$(__git_ps1) \[\e[0m\]\$ '
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
