@@ -14,6 +14,8 @@ DEFAULT="\[\e[0m\]"
 #==========================================================================
 alias ls="ls -A"
 alias ll="ls -lh"
+alias j="jobs"
+alias t="tmux"
 alias irc="weechat-curses"
 alias v="vim"
 alias e="emacs"
