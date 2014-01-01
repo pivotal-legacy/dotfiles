@@ -22,6 +22,12 @@ alias e="emacs"
 alias rgl="rvm gemset list"
 alias rgu="rvm gemset use"
 alias startgres="postgres -D /usr/local/var/postgres"
+#==========================================================================
+# Source bashrc
+#==========================================================================
+if [ -f ~/.bashrc ]; then
+  source ~/.bashrc
+fi
 
 #==========================================================================
 # basic settings
@@ -38,56 +44,9 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 export ARCHFLAGS="-arch x86_64"
 
 #==========================================================================
-# Homebrew
-#==========================================================================
-
-# rearrange path for homebrew
-export PATH=/usr/local/bin:$PATH
-
-# setup bash completion for homebrew
-if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
-  . `brew --prefix`/etc/bash_completion.d/git-completion.bash
-fi
-
-#==========================================================================
-# Git
-#==========================================================================
-
-# setup git prompt function
-if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
-  . `brew --prefix`/etc/bash_completion.d/git-prompt.sh
-fi
-
-# have git prompt note uncommitted changes
-GIT_PS1_SHOWDIRTYSTATE=true
-
-#==========================================================================
-# setup path for npm and node
-#==========================================================================
-
-export PATH=/usr/local/share/npm/bin:$PATH
-export NODE_PATH=/usr/local/lib/node_modules
-
-#==========================================================================
-# RVM
-#==========================================================================
-
-# Add rvm to bash session
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# load rvm bash completion
-[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
-
-export ANDROID_HOME='/usr/local/Cellar/android-sdk/22.2.1'
-
-#==========================================================================
 # prompt
 #==========================================================================
-# Add the bit below for ruby version@gemset in prompt
-# $YELLOW\$(~/.rvm/bin/rvm-prompt)
-
 # assign new colorized prompt
-# export PS1="$GREEN\w$(__git_ps1) $DARK_GRAY\$$DEFAULT "
 export PS1='\[\033[0;34m\]\u: \W\[\033[35m\]$(__git_ps1) \[\e[0m\]\$ '
 
 # assign new colored root prompt
