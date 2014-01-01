@@ -4,18 +4,6 @@
 export PATH="/usr/local/heroku/bin:$PATH"
 
 #==========================================================================
-# RVM
-#==========================================================================
-PATH=$PATH:$HOME/.rvm/bin
-
-# Add rvm to bash session
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# load rvm bash completion
-[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
-
-
-#==========================================================================
 # Homebrew
 #==========================================================================
 
@@ -51,3 +39,14 @@ export NODE_PATH=/usr/local/lib/node_modules
 #==========================================================================
 
 export ANDROID_HOME='/usr/local/Cellar/android-sdk/22.2.1'
+
+#==========================================================================
+# RVM
+#==========================================================================
+PATH=$PATH:$HOME/.rvm/bin
+
+# Add rvm to bash session
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# load rvm bash completion
+[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
