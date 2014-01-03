@@ -40,3 +40,10 @@ export PS1='\[\033[0;34m\]\u: \W\[\033[35m\]$(__git_ps1) \[\e[0m\]\$ '
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
+
+#==========================================================================
+# History
+#==========================================================================
+export HISTCONTROL=erasedups # remove duplicates
+export HISTSIZE=10000 # increase the size
+shopt -s histappend # append session commands to .bash_history
