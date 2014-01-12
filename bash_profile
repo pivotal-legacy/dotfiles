@@ -11,6 +11,7 @@ alias e="emacs"
 alias rgl="rvm gemset list"
 alias rgu="rvm gemset use"
 alias startgres="postgres -D /usr/local/var/postgres"
+alias be="bundle exec"
 
 #==========================================================================
 # Source bashrc
