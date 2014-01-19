@@ -14,6 +14,15 @@ alias startgres="postgres -D /usr/local/var/postgres"
 alias b="bundle"
 alias be="bundle exec"
 alias rb="ruby"
+alias r="rspec"
+# git
+alias gsl="git stash list"
+alias gs="git status"
+alias gsp="git stash pop"
+alias ga="git add"
+alias gc="git commit -v"
+alias gp="git push"
+alias gd="git diff"
 
 #==========================================================================
 # Source bashrc
