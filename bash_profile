@@ -23,6 +23,7 @@ alias ga="git add"
 alias gc="git commit -v"
 alias gp="git push"
 alias gd="git diff"
+alias gl="git log"
 
 #==========================================================================
 # Source bashrc
