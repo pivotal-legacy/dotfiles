@@ -16,6 +16,7 @@ alias be="bundle exec"
 alias rb="ruby"
 alias r="rspec"
 # git
+alias g="git"
 alias gsl="git stash list"
 alias gs="git status"
 alias gsp="git stash pop"
