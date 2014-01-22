@@ -1,6 +1,7 @@
 #==========================================================================
 # aliases
 #==========================================================================
+
 alias ls="ls -A"
 alias ll="ls -lh"
 alias j="jobs"
@@ -15,7 +16,6 @@ alias b="bundle"
 alias be="bundle exec"
 alias rb="ruby"
 alias r="rspec"
-# git
 alias g="git"
 alias gsl="git stash list"
 alias gs="git status"
@@ -29,6 +29,7 @@ alias gl="git log"
 #==========================================================================
 # Source bashrc
 #==========================================================================
+
 if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
@@ -50,8 +51,8 @@ export ARCHFLAGS="-arch x86_64"
 #==========================================================================
 # prompt
 #==========================================================================
+
 # assign new colorized prompt
-#export PS1='\[\033[0;34m\]\u: \W\[\033[35m\]$(__git_ps1) \[\e[0m\]\$ '
 export PS1='\[\033[0;31m\]()\[\e[0m\] '
 
 # assign new colored root prompt
@@ -60,6 +61,7 @@ export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
 #==========================================================================
 # History
 #==========================================================================
+
 export HISTCONTROL=erasedups # remove duplicates
 export HISTSIZE=10000 # increase the size
 shopt -s histappend # append session commands to .bash_history
