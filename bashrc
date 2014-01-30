@@ -44,7 +44,7 @@ export ANDROID_HOME='/usr/local/Cellar/android-sdk/22.2.1'
 # RVM
 #==========================================================================
 
-PATH=$PATH:$HOME/.rvm/bin
+PATH=$HOME/.rvm/bin:$PATH
 
 # Add rvm to bash session
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
