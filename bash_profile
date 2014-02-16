@@ -70,3 +70,4 @@ shopt -s histappend # append session commands to .bash_history
 #==========================================================================
 
 eval "$(rbenv init -)"
+source ~/.rbenv/completions/rbenv.bash
