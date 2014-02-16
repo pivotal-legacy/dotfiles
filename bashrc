@@ -47,15 +47,3 @@ export ANDROID_HOME='/usr/local/Cellar/android-sdk/22.2.1'
 
 export PATH=$PATH:/usr/local/Cellar/go/1.2/libexec/bin
 export GOROOT=/usr/local/Cellar/go/1.2/libexec/
-
-#==========================================================================
-# RVM
-#==========================================================================
-
-PATH=$HOME/.rvm/bin:$PATH
-
-# Add rvm to bash session
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
-
-# load rvm bash completion
-[[ -r $rvm_path/scripts/completion ]] && source $rvm_path/scripts/completion
