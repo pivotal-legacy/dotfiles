@@ -45,9 +45,9 @@ export ANDROID_HOME='/usr/local/Cellar/android-sdk/22.2.1'
 # Go
 #==========================================================================
 
-export PATH=$PATH:/usr/local/Cellar/go/1.2/libexec/bin
 export GOROOT=/usr/local/Cellar/go/1.2/libexec/
 export GOPATH=$HOME/dev/go
+export PATH=$GOPATH/bin:/usr/local/Cellar/go/1.2/libexec/bin:$PATH
 
 #==========================================================================
 # rbenv
