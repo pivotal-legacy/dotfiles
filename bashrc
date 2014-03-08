@@ -1,24 +1,7 @@
-#==========================================================================
-# Heroku toolbelt
-#==========================================================================
-
-export PATH="/usr/local/heroku/bin:$PATH"
-
-#==========================================================================
-# Homebrew
-#==========================================================================
-
-# rearrange path for homebrew
-export PATH=/usr/local/bin:$PATH
-
 # setup bash completion for homebrew
 if [ -f `brew --prefix`/etc/bash_completion.d/git-completion.bash ]; then
   . `brew --prefix`/etc/bash_completion.d/git-completion.bash
 fi
-
-#==========================================================================
-# Git
-#==========================================================================
 
 # setup git prompt function
 if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
@@ -28,29 +11,19 @@ fi
 # have git prompt note uncommitted changes
 GIT_PS1_SHOWDIRTYSTATE=true
 
-#==========================================================================
-# npm and node
-#==========================================================================
+# global environment varilables
+GOROOT="/usr/local/Cellar/go/1.2/libexec/"
+GOPATH="$HOME/dev/go"
+NODE_PATH="/usr/local/lib/node_modules"
 
-export PATH=/usr/local/share/npm/bin:$PATH
-export NODE_PATH=/usr/local/lib/node_modules
+# various path assignments
+GO="$GOPATH/bin:/usr/local/Cellar/go/1.2/libexec/bin"
+HEROKU="/usr/local/heroku/bin"
+HOMEBREW="/usr/local/bin"
+NPM="/usr/local/share/npm/bin"
+RBENV="$HOME/.rbenv/bin"
 
-#==========================================================================
-# Android dev
-#==========================================================================
-
-export ANDROID_HOME='/usr/local/Cellar/android-sdk/22.2.1'
-
-#==========================================================================
-# Go
-#==========================================================================
-
-export GOROOT=/usr/local/Cellar/go/1.2/libexec/
-export GOPATH=$HOME/dev/go
-export PATH=$GOPATH/bin:/usr/local/Cellar/go/1.2/libexec/bin:$PATH
-
-#==========================================================================
-# rbenv
-#==========================================================================
-
-export PATH="$HOME/.rbenv/bin:$PATH"
+export GOROOT
+export GOPATH
+export NODE_PATH
+export PATH="$RBENV:$NPM:$GO:$HEROKU:$HOMEBREW:$PATH"
