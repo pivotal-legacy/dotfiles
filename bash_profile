@@ -18,6 +18,9 @@ export EDITOR=vim
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
 
+# user 256 colors
+export TERM=xterm-256color
+
 # tell compiler to always assume 64 bits
 export ARCHFLAGS="-arch x86_64"
 
