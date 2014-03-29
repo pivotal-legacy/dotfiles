@@ -25,11 +25,20 @@ export TERM=xterm-256color
 export ARCHFLAGS="-arch x86_64"
 
 #==========================================================================
+# Git
+#==========================================================================
+
+# setup git prompt function, i.e., __git_ps1
+if [ -f `brew --prefix`/etc/bash_completion.d/git-prompt.sh ]; then
+  . `brew --prefix`/etc/bash_completion.d/git-prompt.sh
+fi
+
+#==========================================================================
 # prompt
 #==========================================================================
 
 # assign new colorized prompt
-export PS1='\[\033[0;31m\](\u@\h)\[\e[0m\] '
+export PS1='\[\033[1;30m\]\u@\h\[\033[0;32m\]$(__git_ps1)\[\033[0;33m\] $\[\e[0m\] '
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
