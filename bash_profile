@@ -29,7 +29,7 @@ export ARCHFLAGS="-arch x86_64"
 #==========================================================================
 
 # assign new colorized prompt
-export PS1='\[\033[0;31m\](\u)\[\e[0m\] '
+export PS1='\[\033[0;31m\](\u@\h)\[\e[0m\] '
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
