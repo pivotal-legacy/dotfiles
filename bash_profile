@@ -42,7 +42,7 @@ function dirty_state {
 #==========================================================================
 
 # assign new colorized prompt
-export PS1='\[\033[1;30m\]\u@\h\[\033[0;32m\]$(__git_ps1)$(dirty_state)\[\033[0;33m\] $\[\e[0m\] '
+export PS1='\u@\h\[\033[0;32m\]$(__git_ps1)$(dirty_state)\[\033[0;33m\] $\[\e[0m\] '
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
