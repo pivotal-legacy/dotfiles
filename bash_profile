@@ -54,3 +54,8 @@ export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
 export HISTCONTROL=erasedups # remove duplicates
 export HISTSIZE=10000 # increase the size
 shopt -s histappend # append session commands to .bash_history
+
+#==========================================================================
+# rbenv
+#==========================================================================
+if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
