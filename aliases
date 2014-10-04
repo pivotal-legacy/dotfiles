@@ -1,3 +1,5 @@
+#!/bin/sh
+
 alias ls="ls -A"
 alias ll="ls -lh"
 alias j="jobs"
@@ -23,5 +25,9 @@ alias gd="git diff"
 alias gl="git log"
 alias gld="git log --oneline --decorate"
 alias gf="git fetch --all --tags"
+alias chead="git commit --amend -CHEAD"
 alias ts="ruby ~/.vim/bundle/test_server/test_server.rb"
 alias dev="cd ~/dev"
+
+# Current projects
+alias api="cd ~/dev/rails/json-api"
