@@ -1,9 +1,9 @@
 # global environment variables
-GOROOT="/usr/local/Cellar/go/1.3/libexec/"
+GOROOT="/usr/local/Cellar/go/1.3.1/libexec/"
 GOPATH="$HOME/dev/go"
 
 # various path assignments
-GO="$GOPATH/bin:/usr/local/Cellar/go/1.3/libexec/bin"
+GO="$GOPATH/bin:/usr/local/Cellar/go/1.3.1/libexec/bin"
 HOMEBREW="/usr/local/bin"
 RBENV="$HOME/.rbenv/bin"
 HOMEBIN="$HOME/bin"
