@@ -30,4 +30,10 @@ alias ts="ruby ~/.vim/bundle/test_server/test_server.rb"
 alias dev="cd ~/dev"
 
 # Current projects
-alias api="cd ~/dev/rails/json-api"
+alias api="cd ~/dev/json-api"
+alias js="cd ~/dev/javascript/"
+alias cljs="cd ~/dev/clojurescript/"
+alias clj="cd ~/dev/clojure/"
+alias cljs="cd ~/dev/clojurescript/"
+
+alias stamp="date +'%Y_%m_%d_%H%M%S'"
