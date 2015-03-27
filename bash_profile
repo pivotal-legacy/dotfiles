@@ -44,9 +44,15 @@ function dirty_state {
 # prompt
 #==========================================================================
 
+ORANGE='\[\033[0;33m\]'
+RED='\[\e[1;31m\]'
+NO_COLOR='\[\e[0m\]'
+CURRENT_WORKING_DIR='\W'
+GIT_BRANCH_NAME='$(__git_ps1)'
+DIRTY_STATE='$(dirty_state)'
+
 # assign new colorized prompt
-# export PS1='\W\[\033[0;32m\]$(__git_ps1)$(dirty_state)\[\033[0;33m\] $\[\e[0m\] '
-export PS1='\[\033[0;33m\][\W$(__git_ps1)\[\e[1;31m\]$(dirty_state)\[\033[0;33m\]]$\[\e[0m\] '
+export PS1="$ORANGE[$CURRENT_WORKING_DIR$GIT_BRANCH_NAME$RED$DIRTY_STATE$ORANGE]\$$NO_COLOR "
 
 # assign new colored root prompt
 export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
