@@ -55,7 +55,7 @@ DIRTY_STATE='$(dirty_state)'
 export PS1="$ORANGE[$CURRENT_WORKING_DIR$GIT_BRANCH_NAME$RED$DIRTY_STATE$ORANGE]\$$NO_COLOR "
 
 # assign new colored root prompt
-export SUDO_PS1="\[\e[33;1;41m\][\u] #\[\e[0m\] "
+export SUDO_PS1="$RED#$NO_COLOR "
 
 #==========================================================================
 # History
