@@ -2,43 +2,37 @@
 
 alias ls="ls -A"
 alias ll="ls -lh"
-alias j="jobs"
-alias t="tmux"
-alias irc="weechat-curses"
-alias v="vim"
+
 alias eda="emacs --daemon"
 alias e="emacsclient -t"
 alias ek="emacsclient -e '(kill-emacs)'"
+
 alias startgres="postgres -D /usr/local/var/postgres"
 alias startredis="redis-server /usr/local/etc/redis.conf"
-alias b="bundle"
+
 alias be="bundle exec"
-alias re="rbenv"
-alias rb="ruby"
-alias r="rspec"
+
+# git aliases
 alias g="git"
-alias gsl="git stash list"
 alias gs="git status"
-alias gsp="git stash pop"
 alias ga="git add"
 alias gc="git commit -v"
-alias gp="git push"
 alias gd="git diff"
 alias gl="git log"
-alias gld="git log --oneline --decorate"
-alias gf="git fetch --all --tags"
 alias chead="git commit --amend -CHEAD"
+
 alias ts="ruby ~/.vim/bundle/test_server/test_server.rb"
-alias dev="cd ~/dev"
+
 
 # Current projects
-alias api="cd ~/dev/json-api"
-alias js="cd ~/dev/javascript/"
-alias cljs="cd ~/dev/clojurescript/"
-alias clj="cd ~/dev/clojure/"
-alias fb="cd ~/dev/foosboard"
-alias ms="cd ~/dev/MachSpiel"
-alias blog="cd ~/dev/ccoriander"
-alias ios="cd ~/dev/ios"
+alias code="cd ~/code"
+alias api="cd ~/code/json-api"
+alias js="cd ~/code/javascript/"
+alias cljs="cd ~/code/clojurescript/"
+alias clj="cd ~/code/clojure/"
+alias fb="cd ~/code/foosboard"
+alias ms="cd ~/code/MachSpiel"
+alias blog="cd ~/code/ccoriander"
+alias ios="cd ~/code/ios"
 
 alias stamp="date +'%Y_%m_%d_%H%M%S'"
