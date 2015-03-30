@@ -6,9 +6,14 @@ if [ -f ~/.bashrc ]; then
   source ~/.bashrc
 fi
 
-if [ -f ~/.bashrc ]; then
+if [ -f ~/.aliases ]; then
   source ~/.aliases
 fi
+
+if [ -f ~/.current ]; then
+  source ~/.current
+fi
+
 
 #==========================================================================
 # basic settings
