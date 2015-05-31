@@ -1,6 +1,7 @@
 # global environment variables
-GOROOT="/usr/local/Cellar/go/1.4/libexec"
-GOPATH="$HOME/code/go"
+GOROOT="/usr/local/Cellar/go/1.4.2/libexec"
+GOPATH="$HOME/workspace/go"
+GOBIN="$GOROOT/bin"
 
 # various path assignments
 GO="$GOPATH/bin:$GOROOT/bin"
