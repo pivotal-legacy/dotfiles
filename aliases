@@ -15,6 +15,7 @@ alias chead="git commit --amend -CHEAD"
 
 # Utilities
 alias be="bundle exec"
+alias bx="bundle exec"
 alias eda="emacs --daemon"
 alias e="emacsclient -t"
 alias ek="emacsclient -e '(kill-emacs)'"
