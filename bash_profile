@@ -57,7 +57,7 @@ GIT_BRANCH_NAME='$(__git_ps1)'
 DIRTY_STATE='$(dirty_state)'
 
 # assign new colorized prompt
-export PS1="$ORANGE[$CURRENT_WORKING_DIR$GIT_BRANCH_NAME$RED$DIRTY_STATE$ORANGE]\$$NO_COLOR "
+export PS1="$ORANGE[\u@\h $CURRENT_WORKING_DIR$GIT_BRANCH_NAME$RED$DIRTY_STATE$ORANGE]\$$NO_COLOR "
 
 # assign new colored root prompt
 export SUDO_PS1="$RED#$NO_COLOR "
