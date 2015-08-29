@@ -1,5 +1,5 @@
 # global environment variables
-export GOROOT="/usr/local/Cellar/go/1.4.2/libexec"
+export GOROOT="/usr/local/go"
 export GOPATH="$HOME/code/go"
 export JAVA_HOME=$(/usr/libexec/java_home)
 
