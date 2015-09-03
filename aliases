@@ -6,7 +6,8 @@ alias ll="ls -lh"
 
 # Git aliases
 alias g="git"
-alias gs="git status"
+alias gs="git show"
+alias gst="git status"
 alias ga="git add"
 alias gc="git duet-commit -v"
 alias gd="git diff"
