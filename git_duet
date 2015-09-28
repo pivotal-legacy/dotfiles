@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+exit_code = if ARGV[1] == "commit"
+  system "git duet-commit #{ARGV[1..-1].join(" ")}"
+else
+  system "git #{ARGV.join(" ")}"
+end
+
+exit exit_code
