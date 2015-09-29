@@ -35,3 +35,6 @@
 	autosquash = true
 [push]
 	default = simple
+[user]
+	name = Person McPivot
+	email = person.mcpivot@pivotal.io
