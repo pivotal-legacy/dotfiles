@@ -33,7 +33,7 @@ shopt -s histappend # append session commands to .bash_history
 
 # Outputs the current branch name in parentheses, e.g., (master)
 # If the current directory is not managed by git, there is no output.
-function git_branch_name {
+function current_branch_name {
   [[ $(git status --porcelain 2> /dev/null) ]] && \
     echo " ($(git branch 2> /dev/null | sed -n '/\* /s///p'))"
 }
@@ -51,7 +51,7 @@ NO_COLOR='\[\e[0m\]'
 USERNAME='\u'
 HOSTNAME='\h'
 CURRENT_WORKING_DIR='\W'
-GIT_BRANCH_NAME='$(git_branch_name)'
+GIT_BRANCH_NAME='$(current_branch_name)'
 DIRTY_STATE='$(dirty_state)'
 
 # assign new colorized prompt
