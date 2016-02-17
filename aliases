@@ -6,18 +6,12 @@ alias ll="ls -lh"
 
 # Git aliases
 alias g="git"
-alias gs="git show"
-alias gst="git status"
+alias gs="git status"
 alias ga="git add"
 alias gc="git duet-commit -v"
 alias gd="git diff"
 alias gl="git log"
-alias chead="git commit --amend -CHEAD"
 
 # Utilities
 alias be="bundle exec"
 alias bx="bundle exec"
-alias eda="emacs --daemon"
-alias e="emacsclient -t"
-alias ek="emacsclient -e '(kill-emacs)'"
-alias stamp="date +'%Y.%m.%d.%H%M%S'"
