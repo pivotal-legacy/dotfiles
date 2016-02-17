@@ -5,7 +5,13 @@ echo "=== Installing..."
 
 if [[ -e $HOME/.bash_profile || -e $HOME/.aliases ]]; then
   echo "Error: Either ~/.bash_profile or ~/.aliases already exists."
-  echo "Rename the files and then try again."
+  echo "Move the files and then try again."
+  exit 1
+fi
+
+if [[ -e $HOME/.git-authors ]]; then
+  echo "Error: ~/.git-authors already exists."
+  echo "Move the files and then try again."
   exit 1
 fi
 
