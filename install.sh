@@ -18,5 +18,6 @@ fi
 echo "=== Creating symbolic links for bash profile and aliases"
 ln -s $PWD/bash_profile $HOME/.bash_profile
 ln -s $PWD/aliases $HOME/.aliases
+ln -s $PWD/git-authors $HOME/.git-authors
 
 echo "=== Installation Successful"
