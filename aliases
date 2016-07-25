@@ -10,7 +10,8 @@ alias gs="git status"
 alias ga="git add"
 alias gc="git duet-commit -v"
 alias gd="git diff"
-alias gl="git log"
+alias gds="git diff --staged"
+alias gl="git log --decorate"
 
 # Utilities
 alias be="bundle exec"
