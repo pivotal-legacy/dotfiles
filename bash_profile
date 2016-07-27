@@ -45,9 +45,9 @@ function dirty_state {
     echo "*"
 }
 
-ORANGE='\[\033[0;33m\]'
-RED='\[\e[1;31m\]'
-NO_COLOR='\[\e[0m\]'
+ORANGE='\033[0;33m'
+RED='\033[1;31m'
+NO_COLOR='\033[0m'
 USERNAME='\u'
 HOSTNAME='\h'
 CURRENT_WORKING_DIR='\W'
