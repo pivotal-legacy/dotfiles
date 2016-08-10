@@ -45,14 +45,14 @@ function dirty_state {
     echo "*"
 }
 
-ORANGE='\033[0;33m'
-RED='\033[1;31m'
-NO_COLOR='\033[0m'
 USERNAME='\u'
 HOSTNAME='\h'
 CURRENT_WORKING_DIR='\W'
 GIT_BRANCH_NAME='$(current_branch_name)'
 DIRTY_STATE='$(dirty_state)'
+RED='\[\e[1;31m\]'
+NO_COLOR='\[\e[0m\]'
+YELLOW='\[\e[0;33m\]'
 
 # assign new colorized prompt
-export PS1="$ORANGE[$CURRENT_WORKING_DIR$GIT_BRANCH_NAME$RED$DIRTY_STATE$ORANGE]\$$NO_COLOR "
+export PS1="$YELLOW[$CURRENT_WORKING_DIR$GIT_BRANCH_NAME$RED$DIRTY_STATE$YELLOW]\$$NO_COLOR "
