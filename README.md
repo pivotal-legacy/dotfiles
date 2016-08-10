@@ -1,6 +1,6 @@
 # Introduction
 
-Here are a handful of dotfiles set up to my taste.
+Here are a handful of simple dotfiles.
 
 # Installation
 
