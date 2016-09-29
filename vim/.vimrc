@@ -1,0 +1,208 @@
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Plugin Settings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Current plugins are:
+" Pathogen      - to manage vim plugins
+" NERDTree      - graphically browse file system
+" Syntastic     - syntax checking
+
+" NOTE: Removed this for the time being - Supertab      - general autocompletion
+
+" Disable Vi compatibility
+set nocompatible
+
+" Pathogen plugin settings
+" Point to location of pathogen submodule (since it's not in .vim/autoload)
+runtime bundle/vim-pathogen/autoload/pathogen.vim
+" Call pathogen plugin management
+execute pathogen#infect()
+call pathogen#helptags()
+filetype on
+filetype plugin indent on
+
+
+" NERDtree
+" - close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" Don't open nerdtree in gvim on startup!
+let g:nerdtree_tabs_open_on_gui_startup = 0
+
+
+" Sparkup
+"let g:sparkupNextMapping = '<c-x>'
+
+
+" Syntastic
+let g:syntastic_check_on_open = 1
+let g:syntastic_enable_signs = 1
+let g:syntastic_mode_map = {  'mode': 'active',
+                            \ 'active_filetypes':  [],
+                            \ 'passive_filetypes': []}
+let g:syntastic_javascript_checkers = ['jscs']
+let g:syntastic_aggregate_errors = 1
+
+" Tagbar
+"let g:tagbar_type_javascript = {
+"    \ 'ctagsbin': '/Users/walter/.nvm/v0.10.31/bin/jsctags',
+"\ }
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Keymappings
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" mapping to make tComment easier to use - allows you to use \c as a shortcut.
+map <leader>c <c-_><c-_>
+
+" use jj to escape out of insert mode (great idea!)
+" adapted from: http://stevelosh.com/blog/2010/09/coming-home-to-vim/
+inoremap jj <ESC>
+
+" Tab Shortcuts that won't interfere with OS X shortcuts
+" adapted from: http://stackoverflow.com/questions/6832364/gvim-switching-tabs-with-keyboard
+nnoremap <S-t> <Esc>:tabprev<CR>
+nnoremap <S-y> <Esc>:tabnext<CR>
+nnoremap <S-m> <Esc>:tabnew<CR>
+
+" Typos
+" adapted from: https://bitbucket.org/sjl/dotfiles/src/82049cfc9eb4/vim/vimrc
+command! -bang E e<bang>
+command! -bang Q q<bang>
+command! -bang W w<bang>
+command! -bang QA qa<bang>
+command! -bang Qa qa<bang>
+command! -bang Wa wa<bang>
+command! -bang WA wa<bang>
+command! -bang Wq wq<bang>
+command! -bang WQ wq<bang>
+
+" Move horizontal split window columns
+if bufwinnr(1)
+    map + <C-W><
+    map - <C-W>>
+endif
+
+" Remove trailing whitespace and stop trying to highlight all new spaces afterwards :)
+command! RemoveTrailingWhitespace %s:\s\+$:: | :nohl
+
+" Double all beginning line spaces - and stop all highlighting afterwards
+" adapted from: http://stackoverflow.com/questions/5217058/vim-reformat-a-python-file-to-have-4-space-indentations
+command! DoubleAllBeginningLineSpaces %s:^\s*:&&:g | :nohl
+
+
+""""""""""""""""
+" => F<num> Keys
+""""""""""""""""
+
+" Note:<F1> is help in both normal and input modes
+
+" NERDTree toggle
+nmap <silent> <special> <F2> :NERDTreeToggle<RETURN>
+
+" Use pastetoggle to enable/disable indentation
+set pastetoggle=<F3>
+
+" Tagbar
+"nnoremap <silent> <F4> :TagbarToggle<CR>
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Colors and Fonts
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+syntax on
+
+" Highlight searches [use :noh to clear]
+set hlsearch
+set colorcolumn=78
+"set background=dark
+set t_Co=256
+
+" Highlight current line
+" set cursorline
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Search
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Ignore case when searching
+set ignorecase
+
+" Search both upper and lower case
+set smartcase
+
+" Show incremental search results
+set incsearch
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => Centralize files
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Centralize backups, swapfiles and undo history
+"set backupdir=$HOME/.vim/backups
+"set directory=$HOME/.vim/swaps
+"if exists("&undodir")
+"    set undodir=$HOME/.vim/undo
+"endif
+"set viminfo+=n$HOME/.vim/.viminfo
+
+
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" => General / UI
+"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+
+" Show partial commands in status line
+set showcmd
+" Show whether in insert or replace mode
+set showmode
+
+" Set utf8 as standard encoding and en_US as the standard language
+set encoding=utf8
+
+" Use Unix as the standard file type
+set ffs=unix,dos,mac
+
+" Backspace key seems to be messed up on OS X - this'll fix it
+set backspace=2
+
+" Show tabstops as >......
+"set list
+"set listchars=tab:>.
+
+" Show line numbers on side
+set number
+
+"Display ruler when initially opening a file
+set ruler
+
+"set rulerformat=%l,%c%V%=%P
+
+" Keep all tabs open
+set showtabline=2
+
+" Always show the status line
+"set laststatus=2
+
+" Format the status line
+" set statusline=\ %F%m%r%h\ %w\ \ CWD:\ %r%{getcwd()}%h\ \ \ Line:\ %l
+
+" Autoindent tabs
+set autoindent
+" Use 2 spaces for indentation
+set shiftwidth=2
+" Use 2 spaces for tab
+set tabstop=2
+" Expand tab to spaces
+set expandtab
+
+" Put new vsplit windows on right
+set splitright
+" Put new split windows on bottom
+set splitbelow
+
+" Faster refresh time for tagbar to update more frequently when traversing files
+set updatetime=500

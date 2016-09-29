@@ -17,6 +17,18 @@ cd dotfiles
 ./install.sh
 ```
 
+# Vim Submodules
+
+You will need to clone and setup submodules for vim plugins when you first install these dotfiles:
+```
+git submodule update --init
+```
+
+Afterwards, you can update the submodules as follows:
+```
+git submodule update --recursive
+```
+
 # Odds and Ends
 
 There is no `bashrc` file in this repository, although the `bash_profile` will attempt to source a `.bashrc` file if it exists in the home directory. I put various `PATH` assignments and temporary environment variables in the `.bashrc` and leave it outside of the repo here so as to avoid polluting these files with arbitrary and passing experiments.
